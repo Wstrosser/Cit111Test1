@@ -6,12 +6,16 @@ public class Casino {
 		Cards card = new Cards();
 		int x,y;
 		boolean illegal=false;
-		while(illegal==false) {
+		int i = 0;
+		while(i<53) {
 		y=card.cardDealtType();
 		x=card.cardDealtValue();
-			System.out.println(card.cardName(x,y));
-			Thread.sleep(10);
-			illegal = card.cardIllegalChecker(x, y);
-	}
+			while(card.cardIllegalChecker(x, y)==true) {
+				x=card.cardDealtValue();
+				y=card.cardDealtType();
+			}
+			Thread.sleep(100);
+			System.out.println(card.cardName(x,y)+"  "+i);
+	i++;}
 	}
 }

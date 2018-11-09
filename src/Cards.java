@@ -80,7 +80,7 @@ public class Cards {
 	}
 	public int cardDealtType() {
 		Random random = new Random();
-		int value = random.nextInt(3);
+		int value = random.nextInt(4);
 		value++;
 		return value;
 	}
