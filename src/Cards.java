@@ -85,11 +85,11 @@ public class Cards {
 		return value;
 	}
 	public boolean cardIllegalChecker(int x, int y)
-	{boolean valid=false;
-		if(array[x][y]==false) {
-			array[x][y]=true;
-		}else {valid=true;}
+	{boolean invalid=false;
+		if(array[x][y]==true) {
+			invalid=true;
+		}else {array[x][y]=true;}
 		
-		return valid;
+		return invalid;
 	}
 }
