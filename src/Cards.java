@@ -1,11 +1,13 @@
+import java.sql.Array;
 import java.util.*;
+
 public class Cards {
 	public boolean[][] array = new boolean[14][5];
 	public int cardWorthBlackJack(int x) {
 		int worth;
 		if (x == 1)
 			worth = 11;
-		else if (x == 10) {
+		else if (x >= 10) {
 			worth = 10;
 		} else
 			worth = x;
@@ -92,4 +94,11 @@ public class Cards {
 		
 		return invalid;
 	}
-}
+	public void resetChecker() {
+		for(int i=0; i<14; i++) {
+			for(int j=0; j<4; j++) {
+				array[i][j]=false;
+			}}
+		}
+	}
+

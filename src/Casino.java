@@ -15,7 +15,7 @@ public class Casino {
 				y=card.cardDealtType();
 			}
 			Thread.sleep(100);
-			System.out.println(card.cardName(x,y)+"  "+i);
+			System.out.println(card.cardName(x,y)+"  "+x+" "+y);
 	i++;}
 	}
 }
