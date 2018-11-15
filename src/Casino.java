@@ -7,7 +7,7 @@ public class Casino {
 		int x,y;
 		boolean illegal=false;
 		int i = 0;
-		while(i<53) {
+		while(i<15) {
 		y=card.cardDealtType();
 		x=card.cardDealtValue();
 			while(card.cardIllegalChecker(x, y)==true) {
@@ -15,7 +15,9 @@ public class Casino {
 				y=card.cardDealtType();
 			}
 			Thread.sleep(100);
-			System.out.println(card.cardName(x,y)+"  "+x+" "+y);
-	i++;}
+			System.out.println(card.cardName(x,y)+"  "+ x +" "+y);
+	i++;}Account ac = new Account();
+		System.out.println((ac.balanceCasino-=956));
+		System.out.println(ac.balanceCasino);
 	}
 }

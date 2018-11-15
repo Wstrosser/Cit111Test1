@@ -7,8 +7,11 @@ public class Account {
 	public int getCasinoBalance() {
 		return this.balanceCasino;
 	}
-	public void setCasinoBalance(int x) {
-		balanceCasino=x;
+	public void setPlusCasinoBalance(int x) {
+		balanceCasino+=x;
+	}
+	public void setMinusCasinoBalance(int x) {
+		balanceCasino-=x;
 	}
 	
 }
