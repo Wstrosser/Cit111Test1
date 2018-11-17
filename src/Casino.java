@@ -1,10 +1,10 @@
 public class Casino {
-
+static Account ac = new Account();
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		Cards card = new Cards();
 		CardRanks x;
-		CardSuits y;Account ac = new Account();
+		CardSuits y;
 		int i = 0;
 		while (i < 150&&!ac.endGame()) {
 			y = card.cardDealtSuit();
