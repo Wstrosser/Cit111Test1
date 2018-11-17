@@ -1,6 +1,10 @@
 import java.util.*;
+
 public class Cards {
 	public boolean[][] array = new boolean[14][5];
+	Random random=new Random();
+	CardRanks[] CardRank = CardRanks.values();
+	CardSuits[] cardSuit= CardSuits.values();
 	public int cardWorthBlackJack(int x) {
 		int worth;
 		if (x == 1)
@@ -12,84 +16,74 @@ public class Cards {
 		return worth;
 	}
 
-	public String cardName(int x, int y) {
+	public String cardName(CardRanks x, CardSuits y) {
 		String name = null;
 		switch (x) {
-		case 1:
+		case ACE:
 			name = "Ace ";
 			break;
-		case 2:
+		case TWO:
 			name = "Two ";
 			break;
-		case 3:
+		case THREE:
 			name = "Three ";
 			break;
-		case 4:
+		case FOUR:
 			name = "Four ";
 			break;
-		case 5:
+		case FIVE:
 			name = "Five ";
 			break;
-		case 6:
+		case SIX:
 			name = "Six ";
 			break;
-		case 7:
+		case SEVEN:
 			name = "Seven ";
 			break;
-		case 8:
+		case EIGHT:
 			name = "Eight ";
 			break;
-		case 9:
+		case NINE:
 			name = "Nine ";
 			break;
-		case 10:
+		case TEN:
 			name = "Ten ";
 			break;
-		case 11:
+		case JACK:
 			name = "Jack ";
 			break;
-		case 12:
+		case QUEEN:
 			name = "Queen ";
 			break;
-		case 13:
+		case KING:
 			name = "King ";
 			break;
+		
 		}
-		switch (y) {
-		case 1:
-			name += "of Hearts";
-			break;
-		case 2:
-			name += "of Spades";
-			break;
-		case 3:
-			name += "of Diamonds";
-			break;
-		case 4:
-			name += "of Clubs";
-			break;
-		}
-
+		name+="of "+y;
 		return name;
 	}
-	public int cardDealtValue() {
-		Random random=new Random();
+	public CardRanks cardDealtRank() {
 		int type = random.nextInt(13);
-		type++;
-		return type;
+		return CardRank[type];
 	}
-	public int cardDealtType() {
-		Random random = new Random();
-		int value = random.nextInt(3);
-		value++;
-		return value;
+	public CardSuits cardDealtSuit() {
+		int suit = random.nextInt(4);
+		return cardSuit[suit];
 	}
 	public boolean cardIllegalChecker(int x, int y)
 	{boolean invalid=false;
 		if(array[x][y]==true) {
-			invalid=true;
+			invalid = true;
 		}else {array[x][y]=true;}
 		
 		return invalid;
 	}
-}
+	public void resetChecker() {
+		for(int i=0; i<14; i++) {
+			for(int j=0; j<4; j++) {
+				array[i][j]=false;
+			}}
+		}
+	}
+
