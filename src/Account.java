@@ -24,12 +24,13 @@ public class Account {
 	}
 
 	public boolean endGame() {
-		if (balanceCasino <= 100 || userBalance == 0) {
-			System.out.println("End of Game");
-			return true;
-		} else
-			return false;
-	}
+		if (balanceCasino <= 100)
+		{System.out.println("The Casino ran out of money well done");
+			return true;}
+		
+		else if(userBalance<=0) {System.out.println("You have ran out of funds"); return true;}
+		else	return false;}
+	
 
 	public int getPayOut() {
 		betPayout = betPlace * multipler;
@@ -37,10 +38,11 @@ public class Account {
 	}
 
 	void setBet(int x) {
-		if (userBalance >= x)
 			betPlace = x;
-		else
-			System.out.println("Can't place a bet that high!");
+	}
+	public boolean validBet() {
+		if (betPlace<=userBalance)return true;
+		else return false;
 	}
 
 	public void setMultipler(int x) {
