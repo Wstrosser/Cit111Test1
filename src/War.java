@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class War {
-	public static void main(String[] args) throws InterruptedException {
-
+	public static void war() throws InterruptedException {
+		String buffer = null;
 		Account ac = Casino.ac;
 		Cards card = new Cards();
 		Scanner scanner = new Scanner(System.in);
@@ -14,7 +14,7 @@ public class War {
 		System.out.println("This is the game of war, however, the computer breaks all ties");
 		System.out.println("How much would you like to bet?	Your balance is " + ac.userBalance);
 		ac.setBet(scanner.nextInt());
-
+		
 		while (next == 'y'  && ac.validBet() && !ac.endGame()) {
 
 			y = card.cardDealtSuit();
@@ -38,7 +38,7 @@ public class War {
 
 			if (x.worth > xc.worth) {
 				win = true;
-				System.out.println(x.worth + "   " + xc.worth);
+				//System.out.println(x.worth + "   " + xc.worth);
 				ac.setWinning(win);
 				ac.setCasinoBalance();
 			} else
@@ -47,9 +47,10 @@ public class War {
 			Thread.sleep(100);
 			System.out.println("Would you like to play again? Your balance is " + ac.userBalance);
 			
-			try {scanner.hasNext();
-				next = scanner.nextLine().toLowerCase().charAt(0) ;
+			try {scanner.hasNext(); buffer.equals(scanner.nextLine().toLowerCase());
+				next = buffer.charAt(0) ; System.out.println(next);
 			} catch (Exception e) {
+				System.out.println("Anything");
 			}
 		}
 		scanner.close();

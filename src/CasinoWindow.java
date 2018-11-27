@@ -11,10 +11,13 @@ import java.awt.GridBagLayout;
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import java.awt.Font;
+import javax.swing.AbstractAction;
+import javax.swing.Action;
 
 public class CasinoWindow {
 Account ac = new Account();
 	private JFrame frame;
+	private final Action action = new SwingAction();
 
 	/**
 	 * Launch the application.
@@ -49,6 +52,10 @@ Account ac = new Account();
 		frame.getContentPane().setLayout(null);
 		
 		JButton btnNewButton = new JButton("War");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnNewButton.setBounds(335, 227, 89, 23);
 		frame.getContentPane().add(btnNewButton);
 		
@@ -76,5 +83,13 @@ Account ac = new Account();
 		JLabel label = new JLabel("$" +ac.balanceCasino+ " Casino Balance");
 		label.setBounds(10, 11, 134, 14);
 		frame.getContentPane().add(label);
+	}
+	private class SwingAction extends AbstractAction {
+		public SwingAction() {
+			putValue(NAME, "SwingAction");
+			putValue(SHORT_DESCRIPTION, "Some short description");
+		}
+		public void actionPerformed(ActionEvent e) {
+		}
 	}
 }
