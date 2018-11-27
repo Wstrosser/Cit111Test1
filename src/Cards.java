@@ -16,7 +16,14 @@ public class Cards {
 		return worth;
 	}
 
-	public String cardName(CardRanks x, CardSuits y) {
+	/**
+	 * Gets card's full name
+	 * This method use for user friendly card name.
+	 * @param x Card's rank
+	 * @param y Card's Suit
+	 * @return String of the card's full name
+	 */
+	public String toCardName(CardRanks x, CardSuits y) {
 		String name = null;
 		switch (x) {
 		case ACE:
@@ -83,7 +90,8 @@ public class Cards {
 		for(int i=0; i<14; i++) {
 			for(int j=0; j<4; j++) {
 				array[i][j]=false;
-			}}
+			}
 		}
 	}
+}
 

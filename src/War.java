@@ -2,7 +2,6 @@ import java.util.*;
 
 public class War {
 	public static void war() throws InterruptedException {
-		String buffer = null;
 		Account ac = Casino.ac;
 		Cards card = new Cards();
 		Scanner scanner = new Scanner(System.in);
@@ -33,24 +32,27 @@ public class War {
 				yc = card.cardDealtSuit();
 			}
 			Thread.sleep(100);
-			System.out.println("You were dealt " + card.cardName(x, y));
-			System.out.println("The computer was dealt " + card.cardName(xc, yc));
+			System.out.println("You were dealt " + card.toCardName(x, y));
+			System.out.println("The computer was dealt " + card.toCardName(xc, yc));
 
 			if (x.worth > xc.worth) {
 				win = true;
 				//System.out.println(x.worth + "   " + xc.worth);
 				ac.setWinning(win);
 				ac.setCasinoBalance();
-			} else
+			} else {
+				win = false;
+				ac.setWinning(win);
 				ac.setCasinoBalance();
-
+			}
 			Thread.sleep(100);
 			System.out.println("Would you like to play again? Your balance is " + ac.userBalance);
 			
-			try {scanner.hasNext(); buffer.equals(scanner.nextLine().toLowerCase());
-				next = buffer.charAt(0) ; System.out.println(next);
+			try {scanner.hasNext();
+				next = scanner.next().toLowerCase().charAt(0);
+				System.out.println(next);
 			} catch (Exception e) {
-				System.out.println("Anything");
+				System.out.println(e);
 			}
 		}
 		scanner.close();

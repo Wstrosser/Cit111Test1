@@ -16,7 +16,7 @@ import javax.swing.Action;
 
 public class CasinoWindow {
 Account ac = new Account();
-	private JFrame frame;
+	private JFrame frame, frameWar;
 	private final Action action = new SwingAction();
 
 	/**
@@ -51,9 +51,16 @@ Account ac = new Account();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
+		frameWar = new JFrame();
+		frameWar.setBounds(100, 100, 450, 300);
+		frameWar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frameWar.getContentPane().setLayout(null);
+		
 		JButton btnNewButton = new JButton("War");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				frame.setVisible(false);
+				frameWar.setVisible(true);
 			}
 		});
 		btnNewButton.setBounds(335, 227, 89, 23);
