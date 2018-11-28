@@ -13,10 +13,12 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.AbstractAction;
 import javax.swing.Action;
+import javax.swing.JTextField;
 
 public class CasinoWindow {
 Account ac = new Account();
 	private JFrame frame, frameWar, frameBlackJack, frameBlindBluff;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -54,6 +56,25 @@ Account ac = new Account();
 		frameWar.setBounds(100, 100, 450, 300);
 		frameWar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frameWar.getContentPane().setLayout(null);
+		
+		JButton backButton = new JButton("Back");
+		backButton.setBounds(38, 227, 89, 23);
+		frameWar.getContentPane().add(backButton);
+		backButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			frame.setVisible(true);
+			frameWar.setVisible(false);
+			}
+		});
+		
+		textField = new JTextField();
+		textField.setBounds(220, 227, 89, 23);;
+		frameWar.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JButton betButton = new JButton("Bet");
+		betButton.setBounds(335, 227, 89, 23);
+		frameWar.getContentPane().add(betButton);
 		
 		frameBlackJack = new JFrame();
 		frameBlackJack.setBounds(100, 100, 450, 300);
@@ -111,6 +132,6 @@ Account ac = new Account();
 		JLabel label = new JLabel("$" +ac.balanceCasino+ " Casino Balance");
 		label.setBounds(10, 11, 134, 14);
 		frame.getContentPane().add(label);
+		
 	}
-	
 }
