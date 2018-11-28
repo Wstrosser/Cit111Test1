@@ -16,8 +16,7 @@ import javax.swing.Action;
 
 public class CasinoWindow {
 Account ac = new Account();
-	private JFrame frame, frameWar;
-	private final Action action = new SwingAction();
+	private JFrame frame, frameWar, frameBlackJack, frameBlindBluff;
 
 	/**
 	 * Launch the application.
@@ -56,6 +55,16 @@ Account ac = new Account();
 		frameWar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frameWar.getContentPane().setLayout(null);
 		
+		frameBlackJack = new JFrame();
+		frameBlackJack.setBounds(100, 100, 450, 300);
+		frameBlackJack.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frameBlackJack.getContentPane().setLayout(null);
+		
+		frameBlindBluff = new JFrame();
+		frameBlindBluff.setBounds(100, 100, 450, 300);
+		frameBlindBluff.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frameBlindBluff.getContentPane().setLayout(null);
+		
 		JButton btnNewButton = new JButton("War");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -67,10 +76,22 @@ Account ac = new Account();
 		frame.getContentPane().add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Blackjack");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.setVisible(false);
+				frameBlackJack.setVisible(true);
+			}
+		});
 		btnNewButton_1.setBounds(236, 227, 89, 23);
 		frame.getContentPane().add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("Blind Bluff");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.setVisible(false);
+				frameBlindBluff.setVisible(true);
+			}
+		});
 		btnNewButton_2.setBounds(137, 227, 89, 23);
 		frame.getContentPane().add(btnNewButton_2);
 		
@@ -91,12 +112,5 @@ Account ac = new Account();
 		label.setBounds(10, 11, 134, 14);
 		frame.getContentPane().add(label);
 	}
-	private class SwingAction extends AbstractAction {
-		public SwingAction() {
-			putValue(NAME, "SwingAction");
-			putValue(SHORT_DESCRIPTION, "Some short description");
-		}
-		public void actionPerformed(ActionEvent e) {
-		}
-	}
+	
 }

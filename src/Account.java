@@ -25,7 +25,7 @@ public class Account {
 
 	public boolean endGame() {
 		if (balanceCasino <= 100)
-		{System.out.println("The Casino ran out of money well done");
+		{System.out.println("The Casino ran out of money, well done");
 			return true;}
 		
 		else if(userBalance<=0) {System.out.println("You have ran out of funds"); return true;}
