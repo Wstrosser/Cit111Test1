@@ -1,82 +1,83 @@
-import java.awt.event.*;
-import javax.swing.*;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.text.AttributeSet;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.Document;
+import javax.swing.text.DocumentFilter;
+import javax.swing.text.PlainDocument;
 
-public class FrameDisplayTest implements ActionListener
-{
-    /*
-     * Creating an object of JFrame instead of extending it 
-     * has no side effects.
-     */
-    private JFrame frame;
-    private JPanel panel, panel1;
-    private JTextField tfield;
-    private JButton nextButton, backButton;
+public class FrameDisplayTest {
+   public static void main(String[] args) {
+      JTextField textField = new JTextField(10);
 
-    public FrameDisplayTest()
-    {
-        frame = new JFrame("Frame Display Test");
-        // If you running your program from cmd, this line lets it comes
-        // out of cmd when you click the top-right  RED Button.
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      JPanel panel = new JPanel();
+      panel.add(textField);
 
-        panel = new JPanel();
-        panel1 = new JPanel();
+      PlainDocument doc = (PlainDocument) textField.getDocument();
+      doc.setDocumentFilter(new MyIntFilter());
 
-        tfield = new JTextField(10);
 
-        nextButton = new JButton("NEXT");
-        backButton = new JButton("BACK");
-        nextButton.addActionListener(this);
-        backButton.addActionListener(this);
+      JOptionPane.showMessageDialog(null, panel);
+   }
+}
 
-        panel.add(tfield);
-        panel.add(nextButton);
-        panel1.add(backButton);
+class MyIntFilter extends DocumentFilter {
+   @Override
+   public void insertString(FilterBypass fb, int offset, String string,
+         AttributeSet attr) throws BadLocationException {
 
-        frame.setContentPane(panel);
-        frame.setSize(220, 220);
-        frame.setVisible(true);
-    }
+      Document doc = fb.getDocument();
+      StringBuilder sb = new StringBuilder();
+      sb.append(doc.getText(0, doc.getLength()));
+      sb.insert(offset, string);
 
-    public void actionPerformed(ActionEvent ae)
-    {
-        JButton button = (JButton) ae.getSource();
-        if (tfield.getText().length() > 0)
-        {
-            if (button == nextButton)
-            {   
-                /*
-                 * this will remove the first panel 
-                 * and add the new panel to the frame.
-                 */
-                frame.remove(panel);
-                frame.setContentPane(panel1);
-            }
-            else if (button  == backButton)
-            {
-                frame.remove(panel1);
-                frame.setContentPane(panel);
-            }
-            frame.validate();
-            frame.repaint(); // prefer to write this always.
-        }
-    }   
+      if (test(sb.toString())) {
+         super.insertString(fb, offset, string, attr);
+      } else {
+         // warn the user and don't allow the insert
+      }
+   }
 
-    public static void main(String[] args)
-    {   
-        /*
-         * This is the most important part ofyour GUI app, never forget 
-         * to schedule a job for your event dispatcher thread : 
-         * by calling the function, method or constructor, responsible
-         * for creating and displaying your GUI.
-         */
-        SwingUtilities.invokeLater(new Runnable()
-        {
-            @Override
-            public void run()
-            {
-                new FrameDisplayTest();
-            }
-        });
-    }
+   private boolean test(String text) {
+      try {
+         Integer.parseInt(text);
+         return true;
+      } catch (NumberFormatException e) {
+         return false;
+      }
+   }
+
+   @Override
+   public void replace(FilterBypass fb, int offset, int length, String text,
+         AttributeSet attrs) throws BadLocationException {
+
+      Document doc = fb.getDocument();
+      StringBuilder sb = new StringBuilder();
+      sb.append(doc.getText(0, doc.getLength()));
+      sb.replace(offset, offset + length, text);
+
+      if (test(sb.toString())) {
+         super.replace(fb, offset, length, text, attrs);
+      } else {
+         // warn the user and don't allow the insert
+      }
+
+   }
+
+   @Override
+   public void remove(FilterBypass fb, int offset, int length)
+         throws BadLocationException {
+      Document doc = fb.getDocument();
+      StringBuilder sb = new StringBuilder();
+      sb.append(doc.getText(0, doc.getLength()));
+      sb.delete(offset, offset + length);
+
+      if (test(sb.toString())) {
+         super.remove(fb, offset, length);
+      } else {
+         // warn the user and don't allow the insert
+      }
+
+   }
 }

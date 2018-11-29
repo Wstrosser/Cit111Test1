@@ -80,7 +80,7 @@ public class Cards {
 	}
 	public boolean cardIllegalChecker(int x, int y)
 	{boolean invalid=false;
-		if(array[x][y]==true) {
+		if(array[x][y]) {
 			invalid = true;
 		}else {array[x][y]=true;}
 		

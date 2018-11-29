@@ -41,8 +41,7 @@ public class Account {
 			betPlace = x;
 	}
 	public boolean validBet() {
-		if (betPlace<=userBalance)return true;
-		else return false;
+		return betPlace <= userBalance;
 	}
 
 	public void setMultipler(int x) {
@@ -54,10 +53,7 @@ public class Account {
 	}
 
 	public void setWinning(boolean x) {
-		if (x == true)
-			isWinning = true;
-		else
-			isWinning = false;
+		isWinning = x;
 	}
 
 	public void endOfHand(boolean x, int a, int b) {

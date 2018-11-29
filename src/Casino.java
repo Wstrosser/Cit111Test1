@@ -24,6 +24,6 @@ public static void main(String[] args) throws InterruptedException {
 //			
 //		}
 	
-	War.war();;
+	War.war();
 }}
 

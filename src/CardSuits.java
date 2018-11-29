@@ -7,7 +7,7 @@ public enum CardSuits {
 		return this.color;
 	}
 
-	private CardSuits(String color) {
+	CardSuits(String color) {
 		this.color = color;
 	}
 

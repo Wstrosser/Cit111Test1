@@ -8,7 +8,6 @@ public class War {
 		char next = 'y';
 		CardRanks x, xc;
 		CardSuits y, yc;
-		boolean win = false;
 
 		System.out.println("This is the game of war, however, the computer breaks all ties");
 		System.out.println("How much would you like to bet?	Your balance is " + ac.userBalance);
@@ -19,7 +18,7 @@ public class War {
 			y = card.cardDealtSuit();
 			x = card.cardDealtRank();
 
-			while (card.cardIllegalChecker(x.ordinal(), y.ordinal()) == true) {
+			while (card.cardIllegalChecker(x.ordinal(), y.ordinal())) {
 				x = card.cardDealtRank();
 				y = card.cardDealtSuit();
 			}
@@ -27,7 +26,7 @@ public class War {
 			yc = card.cardDealtSuit();
 			xc = card.cardDealtRank();
 
-			while (card.cardIllegalChecker(xc.ordinal(), yc.ordinal()) == true) {
+			while (card.cardIllegalChecker(xc.ordinal(), yc.ordinal())) {
 				xc = card.cardDealtRank();
 				yc = card.cardDealtSuit();
 			}
@@ -36,29 +35,26 @@ public class War {
 			System.out.println("The computer was dealt " + card.toCardName(xc, yc));
 
 			if (x.worth > xc.worth) {
-				win = true;
 				//System.out.println(x.worth + "   " + xc.worth);
-				ac.setWinning(win);
+				ac.setWinning(true);
 				ac.setCasinoBalance();
 			} else {
-				win = false;
-				ac.setWinning(win);
+				ac.setWinning(false);
 				ac.setCasinoBalance();
 			}
 			Thread.sleep(100);
 			System.out.println("Would you like to play again? Your balance is " + ac.userBalance);
 			
-			try {scanner.hasNext();
+			try {scanner.next();
 				next = scanner.next().toLowerCase().charAt(0);
-				System.out.println(next);
 			} catch (Exception e) {
-				System.out.println(e);
+			System.out.print("Please type yes or no");
 			}
 		}
 		scanner.close();
 		if(next == 'n') System.out.println("Thank you for playing");
 		else if (!ac.validBet()) System.out.println("Next time please place a valid bet");
-		else if (ac.endGame()) System.out.println("");
+		else if (ac.endGame()) System.out.println("  ");
 		else System.out.println("An error has happened");
 	}
 }
