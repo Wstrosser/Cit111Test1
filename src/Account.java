@@ -1,8 +1,9 @@
 
-public class Account {
+class Account {
 	int balanceCasino = 1000, userBalance = 100;
-	int betPlace, multipler = 1, betPayout;
-	boolean isWinning = false;
+	int betPlace;
+	private int multipler = 1;
+	private boolean isWinning = false;
 
 	public int getCasinoBalance() {
 		return this.balanceCasino;
@@ -32,19 +33,19 @@ public class Account {
 		else	return false;}
 	
 
-	public int getPayOut() {
-		betPayout = betPlace * multipler;
+	private int getPayOut() {
+		int betPayout = betPlace * multipler;
 		return betPayout;
 	}
 
-	void setBet(int x) {
+	private void setBet(int x) {
 			betPlace = x;
 	}
 	public boolean validBet() {
 		return betPlace <= userBalance;
 	}
 
-	public void setMultipler(int x) {
+	private void setMultipler(int x) {
 		multipler = x;
 	}
 

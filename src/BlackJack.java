@@ -1,4 +1,3 @@
-import java.util.*;
 public class BlackJack {
 /*int[] cardPlayer=new int[5];
 int[] cardComputer=new int[5];

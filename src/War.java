@@ -1,60 +1,56 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class War extends Window{
-	public static void war() throws InterruptedException {
-		Account ac = Casino.ac;
-		Cards card = new Cards();
-		Scanner scanner = new Scanner(System.in);
-		char next = 'y';
-		CardRanks x, xc;
-		CardSuits y, yc;
+public class War extends Window {
 
-		System.out.println("This is the game of war, however, the computer breaks all ties");
+    public static void war() throws InterruptedException {
+        Account ac = Casino.ac;
+        Cards card = Casino.card;
+        Scanner scanner = new Scanner(System.in);
+        char next = 'y';
+        CardRanks x = Casino.playerRank, xc = Casino.computerRank;
+        CardSuits y = Casino.playerSuit, yc = Casino.computerSuit;
+        int i = Casino.i;
+
+		/*System.out.println("This is the game of war, however, the computer breaks all ties");
 		System.out.println("How much would you like to bet?	Your balance is " + ac.userBalance);
 		ac.setBet(scanner.nextInt());
-		
-		while (next == 'y'  && ac.validBet() && !ac.endGame()) {
+		*/
 
-			y = card.cardDealtSuit();
-			x = card.cardDealtRank();
+        if (i >= 52) {
+            card.resetChecker();
+            System.out.println("The deck is shuffled");
+        }
+        do {
+            i++;
+            y = card.cardDealtSuit();
+            x = card.cardDealtRank();
+        }
+        while (card.cardIllegalChecker(x.ordinal(), y.ordinal()));
 
-			while (card.cardIllegalChecker(x.ordinal(), y.ordinal())) {
-				x = card.cardDealtRank();
-				y = card.cardDealtSuit();
-			}
-			Thread.sleep(100);
-			yc = card.cardDealtSuit();
-			xc = card.cardDealtRank();
 
-			while (card.cardIllegalChecker(xc.ordinal(), yc.ordinal())) {
-				xc = card.cardDealtRank();
-				yc = card.cardDealtSuit();
-			}
-			Thread.sleep(100);
-			System.out.println("You were dealt " + card.toCardName(x, y));
-			System.out.println("The computer was dealt " + card.toCardName(xc, yc));
+        Thread.sleep(100);
 
-			if (x.worth > xc.worth) {
-				//System.out.println(x.worth + "   " + xc.worth);
-				ac.setWinning(true);
-				ac.setCasinoBalance();
-			} else {
-				ac.setWinning(false);
-				ac.setCasinoBalance();
-			}
-			Thread.sleep(100);
-			System.out.println("Would you like to play again? Your balance is " + ac.userBalance);
-			
-			try {scanner.next();
-				next = scanner.next().toLowerCase().charAt(0);
-			} catch (Exception e) {
-			System.out.print("Please type yes or no");
-			}
-		}
-		scanner.close();
-		if(next == 'n') System.out.println("Thank you for playing");
-		else if (!ac.validBet()) System.out.println("Next time please place a valid bet");
-		else if (ac.endGame()) System.out.println("  ");
-		else System.out.println("An error has happened");
-	}
+        do {
+            i++;
+            xc = card.cardDealtRank();
+            yc = card.cardDealtSuit();
+        }
+        while (card.cardIllegalChecker(xc.ordinal(), yc.ordinal()));
+
+        Thread.sleep(100);
+        System.out.println("You were dealt " + card.toCardName(x, y));
+        System.out.println("The computer was dealt " + card.toCardName(xc, yc));
+        System.out.println(i + " Cards have been played");
+
+        if (x.worth > xc.worth) {
+            //System.out.println(x.worth + "   " + xc.worth);
+            ac.setWinning(true);
+            ac.setCasinoBalance();
+        } else {
+            ac.setWinning(false);
+            ac.setCasinoBalance();
+        }
+        Thread.sleep(100);
+
+    }
 }
