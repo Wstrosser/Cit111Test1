@@ -6,17 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="57a78806-5851-4920-a48a-8c5d019a711a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/CardRanks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/CardRanks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/Cards.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/Cards.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/CasinoWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/War.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/War.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cit111/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/Window.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/War.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/War.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,10 +40,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/War.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="476">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/CardFrontScaled.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -87,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
-              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+            <state relative-caret-position="340">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,8 +108,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>warPane.set</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -122,14 +125,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/BlackJack.java" />
         <option value="$PROJECT_DIR$/src/CasinoWindow.java" />
+        <option value="$PROJECT_DIR$/src/Test.fxml" />
         <option value="$PROJECT_DIR$/src/War.java" />
         <option value="$PROJECT_DIR$/src/Window.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="577" />
-    <option name="y" value="-12" />
+    <option name="x" value="1358" />
+    <option name="y" value="-321" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -150,6 +154,11 @@
             <path>
               <item name="Cit111" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cit111" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cit111" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cit111" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -159,7 +168,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543523839675" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543558916098" />
+    <property name="last_opened_file_path" value="C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -219,10 +229,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-321" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21028744" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16151386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -230,8 +240,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3584288" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3575298" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -239,7 +249,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32972974" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32733223" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32569557" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.29787233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -279,6 +289,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.fxml" />
     <entry file="file://$PROJECT_DIR$/src/CasinoWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
@@ -286,6 +297,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BlackJack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -306,6 +324,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/CardFrontScaled.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/War.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -313,24 +341,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BlackJack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/War.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        <state relative-caret-position="340">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

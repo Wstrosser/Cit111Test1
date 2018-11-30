@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class War {
+public class War extends Window{
 	public static void war() throws InterruptedException {
 		Account ac = Casino.ac;
 		Cards card = new Cards();
