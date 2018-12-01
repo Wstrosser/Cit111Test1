@@ -5,17 +5,9 @@ public class Cards {
     private final Random random = new Random();
     private final CardRanks[] CardRank = CardRanks.values();
     private final CardSuits[] cardSuit = CardSuits.values();
+    private int i;
+    public String text;
 
-    public int cardWorthBlackJack(int x) {
-        int worth;
-        if (x == 1)
-            worth = 11;
-        else if (x >= 10) {
-            worth = 10;
-        } else
-            worth = x;
-        return worth;
-    }
 
     /**
      * Gets card's full name
@@ -69,8 +61,8 @@ public class Cards {
                 break;
 
         }
-        name += "of " + y;
-        return name;
+
+        return name+ ("of " + y);
     }
 
     public CardRanks cardDealtRank() {
@@ -84,22 +76,26 @@ public class Cards {
     }
 
     public void resetChecker() {
-        for (int i = 0; i < 14; i++) {
-            for (int j = 0; j < 5; j++) {
+        for (int i = 0; i < 0b1101; i++) {
+            for (int j = 0; j < 0b100; j++) {
                 array[i][j] = false;
             }
         }
+        this.text+=("\n"+"The deck has been shuffled");
+        i=0;
     }
 
     public boolean cardIllegalChecker(int x, int y) {
-        boolean invalid = false;
+
         if (array[x][y]) {
-            invalid = true;
-        } else {
+            return true;
+        } else {i++;
+            this.text=("Cards played: "+i);
             array[x][y] = true;
         }
-
-        return invalid;
+        if(i>= 0b110100){resetChecker();System.out.println("Shuffle");
+           }
+        return false;
     }
 
 }

@@ -18,12 +18,9 @@ public class Window extends Application{
         launch(args);
     }
 
-    @SuppressWarnings("ThrowablePrintedToSystemOut")
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Casino");
-        Group root = new Group();
-
 
         BorderPane border = new BorderPane();
         HBox buttons = new HBox(10);
@@ -45,11 +42,6 @@ public class Window extends Application{
         btn2.setMinWidth(buttons.getPrefWidth());
         btn3.setMinWidth(buttons.getPrefWidth());
 
-
-        root.getChildren().add(buttons);
-
-        root.setAutoSizeChildren(true);
-
         Label userBalance = new Label("$ " + Casino.ac.userBalance + " Your Current Balance");
         Label casinoBalance = new Label("$ " + Casino.ac.balanceCasino + " Casino's Balance");
         border.setBottom(buttons);
@@ -61,25 +53,24 @@ public class Window extends Application{
 
         Button home = new Button("Home");
 
-
+        Button shuffleDeck= new Button("Shuffle");
         BorderPane warPane = new BorderPane();
         Button betButton = new Button("Bet");
         TextField bet = new TextField();
         HBox betBox = new HBox();
-        betBox.getChildren().addAll(home, bet, betButton);
+        betBox.getChildren().addAll(home, bet, betButton,shuffleDeck);
         bet.setTranslateX(50);
         bet.setMaxWidth(50);
         betButton.setTranslateX(100);
         betButton.setMinWidth(50);
-        Text userBalanceWar = new Text("$" + Casino.ac.getUserBalance());
-        //warPane.setTop(userBalance);
+
         home.setOnAction(event -> {
             primaryStage.show();
             primaryStage.setScene(mainScene);
             border.setTop(userBalance);
             warPane.getChildren().remove(userBalance);
         });
-
+        Text gamePlay = new Text();
         betButton.setOnAction(event -> {
             try {
                 Casino.ac.betPlace = Integer.parseInt(bet.getText());
@@ -87,12 +78,18 @@ public class Window extends Application{
                     War.war();
                     userBalance.setText("$ " + Casino.ac.getUserBalance() + " Balance");
                     casinoBalance.setText("$" + Casino.ac.getCasinoBalance() + " Casino Balance");
-
+                    gamePlay.setText(War.text);
                 }
             } catch (Exception e) {
                 // System.out.print(e);
             }
         });
+
+        shuffleDeck.setOnAction(event ->{
+            Casino.card.resetChecker();
+            gamePlay.setText(Casino.card.text);
+        });
+        warPane.setCenter(gamePlay);
         warPane.setBottom(betBox);
         Scene warScene = new Scene(warPane, 400, 400);
         btn1.setOnAction(event -> {
@@ -100,7 +97,10 @@ public class Window extends Application{
             border.getChildren().remove(userBalance);
             warPane.setTop(userBalance);
             primaryStage.setScene(warScene);
-        });
+        }
+
+
+        );
     }
 
 

@@ -4,7 +4,7 @@ class Account {
 	int betPlace;
 	private int multipler = 1;
 	private boolean isWinning = false;
-
+	public String text;
 	public int getCasinoBalance() {
 		return this.balanceCasino;
 	}
@@ -15,12 +15,14 @@ class Account {
 			balanceCasino -= x;
 			userBalance += x;
 			System.out.println("You have won");
+			text = ("You have won");
 		}
 
 		else {
 			balanceCasino += x;
 			userBalance -= x;
 			System.out.println("You have lost");
+			text=("You have lost");
 		}
 	}
 
@@ -29,13 +31,14 @@ class Account {
 		{System.out.println("The Casino ran out of money, well done");
 			return true;}
 		
-		else if(userBalance<=0) {System.out.println("You have ran out of funds"); return true;}
+		else if(userBalance<=0) {System.out.println("You have ran out of funds");
+		text = ("You have ran out of funds");
+		return true;}
 		else	return false;}
 	
 
 	private int getPayOut() {
-		int betPayout = betPlace * multipler;
-		return betPayout;
+		return betPlace * multipler;
 	}
 
 	private void setBet(int x) {

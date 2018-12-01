@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57a78806-5851-4920-a48a-8c5d019a711a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cit111/Window.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/CardFrontScaled.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/CardFrontScaled.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BlackJack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlackJack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardSuits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardSuits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CardRanks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardRanks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Casino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Casino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CasinoWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FrameDisplayTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/War.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/War.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WarWindow.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,15 +32,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/War.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="816">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/CardFrontScaled.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -56,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CardRanks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="357">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -68,8 +59,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="391">
+              <caret line="95" column="70" selection-start-line="95" selection-start-column="70" selection-end-line="95" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CardImages.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,30 +80,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="997">
-              <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+            <state relative-caret-position="1275">
+              <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="374">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
               <folding>
-                <element signature="e#171#172#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#833#834#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
-                <element signature="e#919#920#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
-                <element signature="e#975#976#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-                <element signature="e#1032#1033#0" expanded="true" />
-                <element signature="e#1070#1071#0" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/src/Casino.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+              <caret line="6" column="68" lean-forward="true" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -119,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/src/CardSuits.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -129,14 +122,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>warPane.set</find>
+      <find>root</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,19 +143,24 @@
         <option value="$PROJECT_DIR$/src/CasinoWindow.java" />
         <option value="$PROJECT_DIR$/src/Test.fxml" />
         <option value="$PROJECT_DIR$/src/Window.kt" />
-        <option value="$PROJECT_DIR$/src/Window.java" />
+        <option value="$PROJECT_DIR$/src/CardRanks.java" />
         <option value="$PROJECT_DIR$/src/Casino.java" />
-        <option value="$PROJECT_DIR$/src/Cards.java" />
-        <option value="$PROJECT_DIR$/src/War.java" />
+        <option value="$PROJECT_DIR$/src/CardImages.java" />
         <option value="$PROJECT_DIR$/src/Account.java" />
+        <option value="$PROJECT_DIR$/src/War.java" />
+        <option value="$PROJECT_DIR$/src/Cards.java" />
+        <option value="$PROJECT_DIR$/src/Window.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1358" />
     <option name="y" value="-321" />
     <option name="width" value="697" />
     <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -169,7 +168,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +189,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,7 +197,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543567974346" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543707014999" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -224,6 +223,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Window">
+    <configuration name="Casino" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Casino" />
+      <module name="Cit111" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CasinoWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CasinoWindow" />
       <module name="Cit111" />
@@ -241,6 +247,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Window" />
+        <item itemvalue="Application.Casino" />
         <item itemvalue="Application.CasinoWindow" />
       </list>
     </recent_temporary>
@@ -259,9 +266,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-321" width="1936" height="1056" extended-state="6" />
+    <frame x="1358" y="-321" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.16151386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.16311301" />
       <window_info id="Structure" order="1" sideWeight="0.50084317" side_tool="true" weight="0.16151386" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -269,14 +277,14 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3575298" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3575298" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32972974" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.3575298" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32502708" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.29685807" />
@@ -341,13 +349,40 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/CasinoWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/CasinoWindow.java" />
+    <entry file="file://$PROJECT_DIR$/out/production/Cit111/Window.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        <state relative-caret-position="-291">
+          <folding>
+            <element signature="e#0#2883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/CardFrontScaled.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Casino.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="68" lean-forward="true" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardImages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardSuits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -358,78 +393,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CardRanks.java">
+    <entry file="file://$PROJECT_DIR$/src/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/CardFrontScaled.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Cit111/Window.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
+        <state relative-caret-position="374">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding>
-            <element signature="e#0#2883#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Casino.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="997">
-          <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CardSuits.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/War.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="816">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        <state relative-caret-position="391">
+          <caret line="95" column="70" selection-start-line="95" selection-start-column="70" selection-end-line="95" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Account.java">
+    <entry file="file://$PROJECT_DIR$/src/CardRanks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

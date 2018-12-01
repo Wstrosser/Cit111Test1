@@ -1,6 +1,5 @@
 public class Casino {
 static Account ac = new Account();
-static War war = new War();
 static Cards card = new Cards();
 static CardRanks playerRank, computerRank;
 static CardSuits playerSuit, computerSuit;
