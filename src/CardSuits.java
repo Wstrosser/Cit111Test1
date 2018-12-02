@@ -1,6 +1,6 @@
 
 public enum CardSuits {
-	Heart("Red"), Spade("Black"), Diamond("Red"), Club("Black");
+	Heart("Red"), Spade("Black"), Diamond("Red"), Club("Black"), Default("White");
 	private String color;
 
 	public String getColor() {

@@ -1,12 +1,8 @@
-import java.util.Scanner;
-
 public class War extends Window {
     public static String text=null;
     public static void war() throws InterruptedException {
         Account ac = Casino.ac;
         Cards card = Casino.card;
-        Scanner scanner = new Scanner(System.in);
-        char next = 'y';
         CardRanks x, xc;
         CardSuits y, yc;
 

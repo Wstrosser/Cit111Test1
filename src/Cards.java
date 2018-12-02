@@ -75,6 +75,7 @@ public class Cards {
         return cardSuit[suit];
     }
 
+    @SuppressWarnings("WeakerAccess")
     public void resetChecker() {
         for (int i = 0; i < 0b1101; i++) {
             for (int j = 0; j < 0b100; j++) {

@@ -57,12 +57,15 @@ public class Window extends Application{
         BorderPane warPane = new BorderPane();
         Button betButton = new Button("Bet");
         TextField bet = new TextField();
-        HBox betBox = new HBox();
-        betBox.getChildren().addAll(home, bet, betButton,shuffleDeck);
-        bet.setTranslateX(50);
+        HBox betBox = new HBox(25);
+        HBox allOfBet = new HBox();
+        allOfBet.getChildren().addAll(bet, betButton);
+        betBox.getChildren().addAll(home, allOfBet,shuffleDeck);
+        //bet.setTranslateX(50);
         bet.setMaxWidth(50);
-        betButton.setTranslateX(100);
-        betButton.setMinWidth(50);
+        //betButton.setTranslateX(50);
+       // shuffleDeck.setTranslateX(100);
+        shuffleDeck.setMinWidth(50);
 
         home.setOnAction(event -> {
             primaryStage.show();
@@ -90,13 +93,16 @@ public class Window extends Application{
             gamePlay.setText(Casino.card.text);
         });
         warPane.setCenter(gamePlay);
+
         warPane.setBottom(betBox);
+        betBox.setAlignment(Pos.CENTER);
         Scene warScene = new Scene(warPane, 400, 400);
         btn1.setOnAction(event -> {
             primaryStage.show();
             border.getChildren().remove(userBalance);
             warPane.setTop(userBalance);
             primaryStage.setScene(warScene);
+            gamePlay.setText("This is the game of War.\nYou and the computer both will be dealt a card.\nWho ever has the highest card wins.\nAce is low.\nPlace your bet below.");
         }
 
 

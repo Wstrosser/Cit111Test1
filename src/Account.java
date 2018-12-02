@@ -1,6 +1,6 @@
 
 class Account {
-	int balanceCasino = 1000, userBalance = 100;
+	int balanceCasino = 100000, userBalance = 100;
 	int betPlace;
 	private int multipler = 1;
 	private boolean isWinning = false;
