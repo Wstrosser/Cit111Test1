@@ -1,4 +1,4 @@
-public class BlackJack {
+class BlackJack {
 /*int[] cardPlayer=new int[5];
 int[] cardComputer=new int[5];
 String[] playerHand = new String[5];

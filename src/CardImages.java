@@ -1,5 +1,3 @@
-import javafx.scene.image.*;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -10,7 +8,7 @@ import java.io.IOException;
 
 
 
-public class CardImages {
+class CardImages {
 
     public void drawCard(Graphics g, CardRanks rank, CardSuits card, int x, int y) {
         int cx;    // x-coord of upper left corner of the card inside cardsImage
@@ -22,13 +20,13 @@ public class CardImages {
         else {
             cx = (rank.worth-1)*158;
             switch (card) {
-                case Heart:
+                case Hearts:
                     cy = 0;
                     break;
-                case Club:
+                case Clubs:
                     cy = 200;
                     break;
-                case Diamond:
+                case Diamonds:
                     cy = 400;
                     break;
                 default:
@@ -38,7 +36,7 @@ public class CardImages {
         }
         g.drawImage(img,x,y,x+185,y+200,cx,cy,cx+185,cy+200, (ImageObserver) this);
     }
-    static BufferedImage img = null;
+    private static BufferedImage img = null;
     static void main (String [] args) {
         try {
           img = ImageIO.read(new File("resources/CardFrontScaled.png"));

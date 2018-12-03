@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Cards {
+class Cards {
     private final boolean[][] array = new boolean[13][4];
     private final Random random = new Random();
     private final CardRanks[] CardRank = CardRanks.values();

@@ -1,7 +1,7 @@
 
 public enum CardSuits {
-	Heart("Red"), Spade("Black"), Diamond("Red"), Club("Black"), Default("White");
-	private String color;
+	Hearts("Red"), Spades("Black"), Diamonds("Red"), Clubs("Black"), Default("White");
+	private final String color;
 
 	public String getColor() {
 		return this.color;

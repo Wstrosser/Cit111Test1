@@ -1,4 +1,4 @@
-public class War extends Window {
+class War{
     public static String text=null;
     public static void war() throws InterruptedException {
         Account ac = Casino.ac;
