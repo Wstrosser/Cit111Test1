@@ -2,9 +2,7 @@ import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
@@ -24,10 +22,18 @@ public class Window extends Application {
         this.primaryStage = primaryStage;
         primaryStage.setTitle("Casino");
 
+
         primaryStage.setScene(mainWindow());
         primaryStage.show();
     }
-
+    private MenuBar menuBar(){
+        MenuBar menuBar = new MenuBar();
+        MenuItem addMoney = new MenuItem("Add Money");
+        Menu menu = new Menu("Settings");
+        menu.getItems().add(addMoney);
+        menuBar.getMenus().add(menu);
+        addMoney.setOnAction(event -> {Casino.ac.userBalance+=100;});
+    return menuBar;}
     private Scene WarWindow() {
         Button home = new Button("Home");
         Button shuffleDeck = new Button("Shuffle");
@@ -64,7 +70,7 @@ public class Window extends Application {
                     gamePlay.setText(War.text);
                 }
             } catch (Exception e) {
-                // System.out.print(e);
+                System.out.print(e);
             }
         });
 
@@ -116,7 +122,7 @@ public class Window extends Application {
         //btn3.setOnAction(event -> primaryStage.setScene(slotScene));
 
         border.setBottom(buttons);
-        border.setTop(userBalance);
+        border.setTop(menuBar());
         border.setLeft(casinoBalance);
 
         return mainWindow;
@@ -133,20 +139,26 @@ public class Window extends Application {
         HBox bottom = new HBox(10);
         bottom.getChildren().addAll(home, bet, higher, lower);
         border.setBottom(bottom);
-        bottom.setAlignment(Pos.BOTTOM_CENTER);
-        Text gamePlay = new Text();
-        border.setTop(Casino.ac.userBalance());
         HighLow.startHighLower();
+        bottom.setAlignment(Pos.BOTTOM_CENTER);
+        Text gamePlay = new Text("This is the game of High or Low.\nYou have been dealt a card below.\nPlace your bet below.\nOnce placed, your bet is lock until a lost.\nEvery 3 correct guess will net you your money back."+HighLow.text);
+        border.setTop(Casino.ac.userBalance());
+
         lower.setOnAction(event -> {
             HighLow.userGuess = "Lower";
             try {
                 if (Casino.ac.betPlace == 0) {
                     Casino.ac.betPlace = Integer.parseInt(bet.getText());
-                }
+                    border.setTop(Casino.ac.userBalance());
+
+                }else
                 if (Casino.ac.validBet()) {
                     HighLow.HighLow();
                     border.setTop(Casino.ac.userBalance());
+
+                    HighLow.startHighLower();
                     gamePlay.setText(HighLow.text);
+
                 }
             }catch(Exception e){
                 System.out.println(e);
@@ -157,12 +169,17 @@ public class Window extends Application {
             try {
                 if (Casino.ac.betPlace == 0) {
                     Casino.ac.betPlace = Integer.parseInt(bet.getText());
-                    Casino.ac.userBalance-=Casino.ac.betPlace;
+
+                    border.setTop(Casino.ac.userBalance());
+
                 }
                 if (Casino.ac.validBet()) {
                     HighLow.HighLow();
                     border.setTop(Casino.ac.userBalance());
+
+                    HighLow.startHighLower();
                     gamePlay.setText(HighLow.text);
+
                 }
             }catch(Exception e){
                 System.out.println(e);
@@ -171,8 +188,9 @@ public class Window extends Application {
         home.setOnAction(event -> {
             primaryStage.setScene(mainWindow());
             primaryStage.show();
+            gamePlay.setText(null);
         });
-        gamePlay.setText(HighLow.text);
+
         border.setCenter(gamePlay);
             return highLow;
         }

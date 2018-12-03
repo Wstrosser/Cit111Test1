@@ -39,7 +39,7 @@ class Account {
     }
 
 
-    private int getPayOut() {
+    public int getPayOut() {
         return betPlace * multipler;
     }
 
@@ -51,7 +51,7 @@ class Account {
         if (betPlace <= 0) {
             text = "Please place a real bet.";
             return false;
-        } else if (betPlace >= userBalance) {
+        } else if (betPlace > userBalance) {
             text = "You don't have enough funds.";
             return false;
         }
