@@ -7,14 +7,14 @@ class HighLow {
     private static CardSuits y = CardSuits.Default;
     private static CardSuits yc;
     private static Cards card = Casino.card;
-
+    public static boolean started= false;
     public static void startHighLower() {
         if (i==1) {
             resetGame();
             x = card.cardDealtRank();
             y = card.cardDealtSuit();
             card.cardIllegalChecker(x.ordinal(), y.ordinal());
-
+            started = true;
         }
         text += ("\nYour card is " + card.toCardName(x, y) + ".\nIs the next card higher or lower?");
     }
@@ -29,7 +29,10 @@ class HighLow {
         }
         while (card.cardIllegalChecker(xc.ordinal(), yc.ordinal()));
         text = ("\nThe next card is " + card.toCardName(xc, yc));
-        if ((userGuess.equalsIgnoreCase("Higher") && x.worth < xc.worth) || (userGuess.equalsIgnoreCase("Lower") && x.worth > xc.worth)) {
+        if ((userGuess.equalsIgnoreCase("Higher") &&
+                x.worth < xc.worth)
+                || (userGuess.equalsIgnoreCase("Lower") &&
+                x.worth > xc.worth)) {
             text += ("\nYou are right.");
             HighLow.i++;
         } else {

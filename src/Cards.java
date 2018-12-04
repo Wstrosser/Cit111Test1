@@ -59,6 +59,7 @@ class Cards {
             case KING:
                 name = "King ";
                 break;
+                default: name = "Default ";
 
         }
 
@@ -94,7 +95,7 @@ class Cards {
             this.text=("Cards played: "+i);
             array[x][y] = true;
         }
-        if(i>= 0b110100){resetChecker();System.out.println("Shuffle");
+        if(i>= 52){resetChecker();System.out.println("Shuffle");
            }
         return false;
     }

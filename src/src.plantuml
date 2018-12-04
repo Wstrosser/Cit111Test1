@@ -13,7 +13,7 @@ title __SRC's Class Diagram__\n
         + getCasinoBalance()
         + setCasinoBalance()
         + endGame()
-        - getPayOut()
+        + getPayOut()
         - setBet()
         + validBet()
         + setMultipler()
@@ -118,6 +118,7 @@ title __SRC's Class Diagram__\n
         {static} - card : Cards
         {static} + startHighLower()
         {static} + HighLow()
+        {static} - resetGame()
     }
   }
   
@@ -135,6 +136,7 @@ title __SRC's Class Diagram__\n
         - primaryStage : Stage
         {static} + main()
         + start()
+        - menuBar()
         - WarWindow()
         - mainWindow()
         - highLowScene()

@@ -43,7 +43,7 @@ class Account {
         return betPlace * multipler;
     }
 
-    private void setBet(int x) {
+    public void setBet(int x) {
         betPlace = x;
     }
 

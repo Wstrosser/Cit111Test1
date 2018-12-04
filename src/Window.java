@@ -90,7 +90,6 @@ public class Window extends Application {
     private Scene mainWindow() {
         BorderPane border = new BorderPane();
         Label userBalance = Casino.ac.userBalance();
-        Label casinoBalance = Casino.ac.casinoBalance();
         HBox buttons = new HBox(10);
         Scene mainWindow = new Scene(border, 400, 400);
         Scene warWindow = WarWindow();
@@ -119,11 +118,11 @@ public class Window extends Application {
             primaryStage.show();
         });
         // btn2.setOnAction(event -> primaryStage.setScene(blackJackScene));
-        //btn3.setOnAction(event -> primaryStage.setScene(slotScene));
+        btn3.setOnAction(event -> primaryStage.setScene(slotScene()));
 
         border.setBottom(buttons);
         border.setTop(menuBar());
-        border.setLeft(casinoBalance);
+        border.setLeft(userBalance);
 
         return mainWindow;
     }
@@ -136,20 +135,24 @@ public class Window extends Application {
         lower = new Button("Lower");
         higher = new Button("Higher");
         TextField bet = new TextField();
-        HBox bottom = new HBox(10);
+        HBox bottom = new HBox(15);
         bottom.getChildren().addAll(home, bet, higher, lower);
         border.setBottom(bottom);
-        HighLow.startHighLower();
+
+        if(!HighLow.started)HighLow.startHighLower();
+
         bottom.setAlignment(Pos.BOTTOM_CENTER);
-        Text gamePlay = new Text("This is the game of High or Low.\nYou have been dealt a card below.\nPlace your bet below.\nOnce placed, your bet is lock until a lost.\nEvery 3 correct guess will net you your money back."+HighLow.text);
+        Text gamePlay = new Text("This is the game of High or Low.\nYou have been dealt a card below.\nPlace your bet below.\nOnce placed, your bet is lock until a lost.\nEvery 4 correct guess will net you your money back."+HighLow.text);
         border.setTop(Casino.ac.userBalance());
 
         lower.setOnAction(event -> {
             HighLow.userGuess = "Lower";
             try {
                 if (Casino.ac.betPlace == 0) {
-                    Casino.ac.betPlace = Integer.parseInt(bet.getText());
-                    border.setTop(Casino.ac.userBalance());
+                    try{Casino.ac.betPlace = Integer.parseInt(bet.getText());
+                    border.setTop(Casino.ac.userBalance());}catch(Exception e){
+                        Casino.ac.betPlace =0;
+                    }
 
                 }else
                 if (Casino.ac.validBet()) {
@@ -194,5 +197,24 @@ public class Window extends Application {
         border.setCenter(gamePlay);
             return highLow;
         }
+    private Scene slotScene(){
+        BorderPane border = new BorderPane();
+        Button home = new Button("Home");
+        TextField bet = new TextField();
+        Button spin = new Button("Spin");
+        HBox bottom = new HBox(15);
+        bottom.getChildren().addAll(home, bet, spin);
+        border.setBottom(bottom); bottom.setAlignment(Pos.BOTTOM_CENTER);
+        Text gamePlay = new Text("Welcome to the card slots.♥♦♣♠");
+        home.setOnAction(event ->{
+            primaryStage.setScene(mainWindow());
+            primaryStage.show();
+        });
 
+
+
+
+        Scene scene = new Scene(border, 400, 400);
+        return scene;
+    }
     }
