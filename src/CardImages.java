@@ -40,7 +40,7 @@ class CardImages {
     static void main (String [] args) {
         try {
           img = ImageIO.read(new File("resources/CardFrontScaled.png"));
-        } catch (IOException e) {
+        } catch (IOException ignored) {
         }
 
 

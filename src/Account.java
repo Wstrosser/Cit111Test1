@@ -57,10 +57,13 @@ class Account {
         }
         return (true);
     }
-
+    public void setMultipler(double x){
+        this.multipler *= x;
+    }
     public void setMultipler(int x) {
         multipler = x;
     }
+
 
     public int getMultipler() {
         return this.multipler;
@@ -82,7 +85,7 @@ class Account {
     }
 
     public Label userBalance() {
-        return new Label("$ " + this.userBalance + " Your Current Balance");
+        return new Label("$ " + this.userBalance + " Current Balance");
     }
 
     public Label casinoBalance() {

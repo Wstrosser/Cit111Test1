@@ -3,10 +3,8 @@ class HighLow {
     public static String userGuess;
     private static int i = 1;
     private static CardRanks x = CardRanks.Default;
-    private static CardRanks xc;
     private static CardSuits y = CardSuits.Default;
-    private static CardSuits yc;
-    private static Cards card = Casino.card;
+    private static final Cards card = Casino.card;
     public static boolean started= false;
     public static void startHighLower() {
         if (i==1) {
@@ -23,6 +21,8 @@ class HighLow {
         Account ac = Casino.ac;
 
 
+        CardSuits yc;
+        CardRanks xc;
         do {
             xc = card.cardDealtRank();
             yc = card.cardDealtSuit();

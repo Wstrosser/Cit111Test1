@@ -18,7 +18,7 @@ class Cards {
      * @return String of the card's full name
      */
     public String toCardName(CardRanks x, CardSuits y) {
-        String name = null;
+        String name;
         switch (x) {
             case ACE:
                 name = "Ace ";
