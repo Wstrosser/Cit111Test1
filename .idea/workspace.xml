@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SHOW_STRUCTURE" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="57a78806-5851-4920-a48a-8c5d019a711a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cit111/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cit111/BlackJack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cit111/HighLow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/HighLow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cit111/META-INF/Cit111.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cit111/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cit111/Window.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BlackJack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlackJack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CardImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardImages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HighLow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HighLow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Slot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Slot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Cit111$Casino.ic" NAME="Casino Coverage Results" MODIFIED="1543789607092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Cit111$CasinoWindow.ic" NAME="CasinoWindow Coverage Results" MODIFIED="1543424733752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Cit111$Window.ic" NAME="Window Coverage Results" MODIFIED="1543812573761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="259" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Cards.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1224">
+                  <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+                  <folding>
+                    <element signature="docComment;method#toCardName#0;class#Cards#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/BlackJack.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1785">
+                  <caret line="105" column="3" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
+                  <folding>
+                    <element signature="e#0#2861#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Uml.png">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Casino.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Window.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="359">
+                  <caret line="252" selection-start-line="252" selection-end-line="252" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#start#0;class#Window#0" />
+                    <element signature="method#menuBar#0;class#Window#0" />
+                    <element signature="method#WarWindow#0;class#Window#0" />
+                    <element signature="method#mainWindow#0;class#Window#0" />
+                    <element signature="method#highLowScene#0;class#Window#0" />
+                    <element signature="method#slotScene#0;class#Window#0" />
+                    <element signature="method#home#0;class#Window#0" />
+                    <element signature="method#menu#0;class#Window#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Window.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#start#0;class#Window#0" />
+                    <element signature="method#menuBar#0;class#Window#0" />
+                    <element signature="method#WarWindow#0;class#Window#0" />
+                    <element signature="method#mainWindow#0;class#Window#0" />
+                    <element signature="method#highLowScene#0;class#Window#0" />
+                    <element signature="method#home#0;class#Window#0" />
+                    <element signature="method#menu#0;class#Window#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Slot.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="156">
+                  <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Account.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="274">
+                  <caret line="70" selection-start-line="70" selection-end-line="70" />
+                  <folding>
+                    <element signature="method#endGame#0;class#Account#0" />
+                    <element signature="method#validBet#0;class#Account#0" />
+                    <element signature="method#endOfHand#0;class#Account#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/HighLow.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="59" selection-start-line="59" selection-end-line="59" />
+                  <folding>
+                    <element signature="method#startHighLower#0;class#HighLow#0" />
+                    <element signature="method#HighLow#0;class#HighLow#0" />
+                    <element signature="method#resetGame#0;class#HighLow#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>warPane.set</find>
+      <find>root</find>
+      <find>Scene</find>
+      <find>border</find>
+      <find>start</find>
+      <find>system</find>
+      <find>49</find>
+      <find>four of D</find>
+      <find>four of cl</find>
+      <find>cas</find>
+      <find>ten of di</find>
+      <find>ace of</find>
+      <find>shuf</find>
+      <find>that</find>
+      <find>royal</find>
+      <find>won</find>
+      <find>pair</find>
+      <find>setTop</find>
+      <find>home</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/CasinoWindow.java" />
+        <option value="$PROJECT_DIR$/src/Test.fxml" />
+        <option value="$PROJECT_DIR$/src/Window.kt" />
+        <option value="$PROJECT_DIR$/src/CardRanks.java" />
+        <option value="$PROJECT_DIR$/src/Casino.java" />
+        <option value="$PROJECT_DIR$/src/CardSuits.java" />
+        <option value="$PROJECT_DIR$/src/CardImages.java" />
+        <option value="$PROJECT_DIR$/src/Buttons.java" />
+        <option value="$PROJECT_DIR$/src/WarWindow.java" />
+        <option value="$PROJECT_DIR$/src/War.java" />
+        <option value="$PROJECT_DIR$/src/src.plantuml" />
+        <option value="$PROJECT_DIR$/src/Cards.java" />
+        <option value="$PROJECT_DIR$/src/HighLow.java" />
+        <option value="$PROJECT_DIR$/src/Account.java" />
+        <option value="$PROJECT_DIR$/src/Slot.java" />
+        <option value="$PROJECT_DIR$/src/Window.java" />
+        <option value="$PROJECT_DIR$/src/BlackJack.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Cit111" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cit111" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cit111" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cit111" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544108092267" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Weston\Documents\GitHub\Cit111\src" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="/" />
+      <command value="?" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Window">
+    <configuration name="Casino" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Casino" />
+      <module name="Cit111" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CasinoWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CasinoWindow" />
+      <module name="Cit111" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HighLow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HighLow" />
+      <module name="Cit111" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Slot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Slot" />
+      <module name="Cit111" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Window" />
+      <module name="Cit111" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Window" />
+        <item itemvalue="Application.Slot" />
+        <item itemvalue="Application.Casino" />
+        <item itemvalue="Application.CasinoWindow" />
+        <item itemvalue="Application.HighLow" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_LAMBDA" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57a78806-5851-4920-a48a-8c5d019a711a" name="Default Changelist" comment="" />
+      <created>1543423912972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543423912972</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4972299" visible="true" weight="0.2375189" />
+      <window_info id="Structure" order="1" sideWeight="0.50277007" side_tool="true" weight="0.23827292" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32502708" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" weight="0.30769232" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32827735" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5026652" side_tool="true" weight="0.3575298" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49840087" weight="0.32242227" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49946696" weight="0.29623568" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32942432" />
+      <window_info anchor="right" id="PlantUML" order="9" weight="0.32995737" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4972299" weight="0.2375189" />
+      <window_info id="Structure" order="1" sideWeight="0.50277007" side_tool="true" weight="0.23827292" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32502708" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.30769232" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32827735" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5026652" side_tool="true" weight="0.3575298" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49840087" weight="0.32242227" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49946696" weight="0.29685807" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32942432" />
+      <window_info anchor="right" id="PlantUML" order="9" weight="0.32995737" />
+    </layout-to-restore>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.desktop/java/awt/event/ActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/CasinoWindow.java" />
+    <entry file="file://$PROJECT_DIR$/out/production/Cit111/Window.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291">
+          <folding>
+            <element signature="e#0#2883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/CardFrontScaled.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Buttons.java" />
+    <entry file="file://$PROJECT_DIR$/src/WarWindow.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/javafx.graphics/javafx/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="350" column="25" selection-start-line="350" selection-start-column="25" selection-end-line="350" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardRanks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardSuits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardImages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src.plantuml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-564">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.ucls">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/War.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/net/SocketInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uml.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/javafx.base/javafx/event/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+          <folding>
+            <element signature="docComment;method#toCardName#0;class#Cards#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Casino.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Slot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="252" selection-start-line="252" selection-end-line="252" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#start#0;class#Window#0" />
+            <element signature="method#menuBar#0;class#Window#0" />
+            <element signature="method#WarWindow#0;class#Window#0" />
+            <element signature="method#mainWindow#0;class#Window#0" />
+            <element signature="method#highLowScene#0;class#Window#0" />
+            <element signature="method#slotScene#0;class#Window#0" />
+            <element signature="method#home#0;class#Window#0" />
+            <element signature="method#menu#0;class#Window#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HighLow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="method#startHighLower#0;class#HighLow#0" />
+            <element signature="method#HighLow#0;class#HighLow#0" />
+            <element signature="method#resetGame#0;class#HighLow#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="method#endGame#0;class#Account#0" />
+            <element signature="method#validBet#0;class#Account#0" />
+            <element signature="method#endOfHand#0;class#Account#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BlackJack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="105" column="3" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#2861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Uml.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Cit111</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Cit111</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
